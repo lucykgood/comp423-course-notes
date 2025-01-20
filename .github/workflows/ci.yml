@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+# Specifies that this workflow should run whenever changes are pushed to main branch
+on:
+  push:
+    branches:
+      - main
+
+# GitHub Action witll be able to write back to this repository
+# Needed to update the gh-pages branch the static site will generate to
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Define tasks to perform
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build and Deploy
+        run: mkdocs gh-deploy --force
