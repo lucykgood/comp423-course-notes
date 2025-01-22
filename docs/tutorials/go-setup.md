@@ -2,4 +2,4 @@
 
 * Primary Author: [Lucy Good](https://github.com/lucykgood)
 
-* Reviewer Author: [Maddie Clark](https://github.com/mbclark37)
+* Reviewer: [Maddie Clark](https://github.com/mbclark37)
