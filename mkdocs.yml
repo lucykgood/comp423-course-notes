@@ -4,3 +4,9 @@ theme:
   features:
     - content.code.copy
     - content.code.select
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
