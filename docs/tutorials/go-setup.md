@@ -68,6 +68,8 @@ In this tutorial you will learn how to:
 
 ## Step 4: Writing Your First Program using Go
 
+> :warning: **Warning:** Before proceeding, ensure you are running your project directory in the Dev Container in VSCode.
+
 ### Initializing a Go Module and Writing Your Hello COMP423 Program
 
 1. Open a new Terminal in VSCode.
@@ -118,8 +120,10 @@ To immediately compile and execute your program into a temporary binary *without
     ```
     go build main.go
     ```
-    
-    !!! note This creates a binary file named ```main``` in your current directory. 
+
+    !!! note
+        This creates a binary file named ```main``` in your current directory. 
+
 
 2. To run your newly created binary file, simply run this command in your Terminal:
     ```
@@ -135,5 +139,12 @@ To immediately compile and execute your program into a temporary binary *without
 
 - ```go run``` is able to compile and execute code in one step. It is used for quick testing.
 - ```go build``` is compiled once and is able to be ran multiple times without re-compiling.
+
+#### Remember what you learned in COMP211? 
+The ```gcc``` command:	
+    ```
+	    gcc -o hello hello.c
+	```
+compiles ```hello.c``` into an executable binary file called ```hello```. This functionality is very similar to ```go build```. The only difference: ```gcc``` does not have an equivalent of ```go run``` that compiles and executes in the same step. 
 
 Congratulations! You have written your very first Go program in a Dev Container that you created! Woohoo!!
