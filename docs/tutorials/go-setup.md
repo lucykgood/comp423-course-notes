@@ -109,7 +109,7 @@ To immediately compile and execute your program into a temporary binary *without
     ```
     go run main.go
     ```
-    Output:
+Output:
     ```
     Hello COMP423!
     ```
